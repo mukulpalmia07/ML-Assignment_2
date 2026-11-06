@@ -20,7 +20,7 @@ There are ten cell-nucleus characteristics: radius, texture, perimeter, area, sm
 ## c. GitHub Repository Link
 
 - **Repository:** https://github.com/mukulpalmia07/ML-Assignment_2
-- **Live Streamlit App:** `<add your Streamlit Community Cloud link here>`
+- **Live Streamlit App:** https://2026aj05858-ml-assignment2.streamlit.app/
 
 ## d. Models Used
 
