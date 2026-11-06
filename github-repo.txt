@@ -1,1 +1,9 @@
 https://github.com/mukulpalmia07/ML-Assignment_2
+
+https://2026aj05858-ml-assignment2.streamlit.app/
+
+----------------------- Add this in .env -----------------------------
+
+LOG_LEVEL=INFO
+TEST_SIZE=0.2
+RANDOM_STATE=42
