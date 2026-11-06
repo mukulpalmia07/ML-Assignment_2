@@ -1,0 +1,55 @@
+/* Layout */
+header[data-testid="stHeader"] { background: transparent; }
+.block-container { padding-top: 2rem; max-width: 1280px; }
+
+/* Hero banner */
+.hero {
+  position: relative; overflow: hidden; padding: 2rem 2.25rem; margin-bottom: 1.25rem; border-radius: 22px;
+  background: radial-gradient(circle at 85% -20%, rgba(34, 211, 238, .35), transparent 45%),
+              linear-gradient(135deg, #1e1b4b 0%, #312e81 50%, #155e75 100%);
+  border: 1px solid rgba(255, 255, 255, .08); box-shadow: 0 20px 50px -20px rgba(139, 92, 246, .45);
+}
+.hero h1 { margin: 0; padding: 0; font-size: 2.4rem; font-weight: 800; letter-spacing: -.02em; color: #fff; }
+.hero p { margin: .4rem 0 1rem; color: #c7d2fe; font-size: 1.02rem; }
+.chip {
+  display: inline-block; margin: 0 .4rem .3rem 0; padding: .28rem .75rem; border-radius: 999px; font-size: .8rem; font-weight: 600;
+  color: #e0e7ff; background: rgba(255, 255, 255, .1); border: 1px solid rgba(255, 255, 255, .15); backdrop-filter: blur(6px);
+}
+
+/* Metric cards */
+[data-testid="stMetric"] {
+  background: linear-gradient(180deg, #161e33 0%, #10172a 100%); border: 1px solid #232c45; border-radius: 16px;
+  padding: 1rem 1.15rem; transition: transform .15s ease, border-color .15s ease;
+}
+[data-testid="stMetric"]:hover { transform: translateY(-2px); border-color: #8b5cf6; }
+[data-testid="stMetricLabel"] { color: #94a3b8; font-weight: 600; text-transform: uppercase; letter-spacing: .04em; font-size: .75rem; }
+[data-testid="stMetricValue"] { font-weight: 700; font-size: 1.65rem; }
+
+/* Pill tabs */
+.stTabs [role="tablist"] { gap: .4rem; background: #10172a; padding: .35rem; border-radius: 14px; border: 1px solid #232c45; width: fit-content; max-width: 100%; }
+.stTabs [role="tablist"] > :not([role="tab"]) { display: none; }
+[data-testid="stTab"] { padding: .45rem 1rem; border-radius: 10px; font-weight: 600; border: 0 !important; }
+[data-testid="stTab"][aria-selected="true"] { background: linear-gradient(135deg, #7c3aed, #0891b2); }
+[data-testid="stTab"][aria-selected="true"] * { color: #fff !important; }
+
+/* Buttons */
+.stButton button, .stDownloadButton button, .stFormSubmitButton button { font-weight: 600; transition: all .15s ease; }
+.stFormSubmitButton button[kind="primaryFormSubmit"] { background: linear-gradient(135deg, #7c3aed, #0891b2); border: 0; }
+.stFormSubmitButton button[kind="primaryFormSubmit"]:hover { filter: brightness(1.12); box-shadow: 0 8px 24px -8px rgba(139, 92, 246, .7); }
+
+/* Verdict card */
+.verdict { padding: 1.4rem 1.6rem; border-radius: 18px; border: 1px solid; }
+.verdict.malignant { background: linear-gradient(135deg, rgba(239, 68, 68, .22), rgba(239, 68, 68, .05)); border-color: rgba(239, 68, 68, .45); }
+.verdict.benign { background: linear-gradient(135deg, rgba(34, 197, 94, .22), rgba(34, 197, 94, .05)); border-color: rgba(34, 197, 94, .45); }
+.verdict .k { color: #94a3b8; font-size: .75rem; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; }
+.verdict .v { font-size: 2.1rem; font-weight: 800; margin: .15rem 0 .6rem; }
+.verdict.malignant .v { color: #f87171; }
+.verdict.benign .v { color: #4ade80; }
+.verdict .row { display: flex; gap: 1.5rem; }
+.verdict .row b { display: block; font-size: 1.35rem; color: #f1f5f9; }
+
+/* Sidebar */
+[data-testid="stSidebar"] h2, [data-testid="stSidebar"] h3 { font-weight: 700; }
+.step { display: flex; gap: .65rem; margin: .55rem 0; color: #cbd5e1; font-size: .9rem; line-height: 1.4; }
+.step span { flex: none; width: 1.5rem; height: 1.5rem; border-radius: 50%; display: grid; place-items: center; font-size: .75rem; font-weight: 700;
+  color: #fff; background: linear-gradient(135deg, #7c3aed, #0891b2); }
